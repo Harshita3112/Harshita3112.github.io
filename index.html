@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/8ef29868cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="images/hs.png " class="hs"> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Achievements">Achievement</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                 </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hey Everyone!</p>
+                <h1> I am <span>Harshita -</span> <br> A software Engineer</h1>
+            </div>
+        </div>
+        
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there! I'm Harshita Shrivastava, a passionate and determined student with a strong desire to become a software engineer.
+                        Currently pursuing B.Tech in Computer Science with Business Systems. Technology has always fascinated me, and I find myself constantly drawn to the world of programming and problem-solving.
+                     My journey into the realm of software development began during my early school years when I started experimenting with simple 
+                      coding projects.I believe that technology has the potential to positively impact people's lives, and I am determined to contribute to that positive change.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links"  onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('Subjects/Electives')">Subjects/Electives</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>2020-2024</span><br>B.Tech from SRM university   CGPA-9.48</li>
+                        <li><span>2018-19</span><br>Class- XII from Ratlam Public School   percent-75.4%</li>
+                        <li><span>2016-17</span><br>Class- X from Ratlam Public School   percent-95%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Skills">
+                    <ul>
+                        <li><span>Advance</span><br>C Language</li>
+                        <li><span>Advance</span><br>C++ Language</li>
+                        <li><span>Advance</span><br>MySQL</li>
+                        <li><span>Advance</span><br>HTML,CSS & JavaScript</li>
+                        <li><span>Intermediate</span><br>Python</li>
+                        <li><span>Basic</span><br>Java</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Subjects/Electives">
+                    <ul>
+                        <li>Database Management Systems</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Computer Networks</li>
+                        <li>Object oriented programming</li>
+                        <li>Operating Systems</li>
+                        <li>Cloud Computing</li>
+                        
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!-- ...........services............-->
+    <div id="Achievements">
+        <div class="container">
+            <h1 class="sub-title">My Achievements</h1>
+            <div class="Achievements-list">
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <h2>Certifications</h2>
+                    <p>1.Python Object oriented programming<br> 2.Artificial Intelligence Personifwy
+                    <br>3. JavaScript </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Competitions</h2>
+                    <p>1.Hackfest'23 <br> 2.Hackrx 3.0 Hackathon </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-award"></i>
+                    <h2>Awards</h2>
+                    <p>Third position <br> Content writing - Essay competition </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------projects----------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"> My projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/cnn1.png">
+                    <div class="layer">
+                        <h3>CNN digit Classification</h3>
+                        <p>Build a model which can identify the handwritten digits by classifying them.
+                            using the given dataset and libraries we are building the convolutional Neural Network and evaluating the model.
+                            </p>
+                            <a href="https://github.com/Harshita3112/CNN-Digit-Classification"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src = "images/fas.png">
+                    <div class="layer">
+                        <h3>CNN for Fashion-Mnist</h3>
+                        <p>The goal of the project is to build a machine learning or deep learning model that can accurately classify the images in the Fashion MNIST dataset into their respective classes. </p>
+                            <a href="https://github.com/Harshita3112/Fashion_mnist_data_classification"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/pppf.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>The aim of this project is to showcase the skills and work experience with visuals .
+                            It will help the company to know about who you are as a professional.
+                            HTML+CSS and JavaScript
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Harshita3112" class="btn">More Projects</a>
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> harshita2122@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> +91 8103426771</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/harshita-shrivastava-aa52551b9/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Harshita3112"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/harshita_shrivastava01?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/harshita.shrivastava.35110?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/Harshita_shrivastava.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="your email" required>
+                            <textarea name="Message" rows ="6" placeholder="your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>www.Harshita.com <i class="fa-regular fa-copyright"></i> All rights reserved </p>
+        </div>
+    </div>
+    <!-- About Section JS work-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+            </script>
+            <script>
+                var sidemeu = document.getElementById("sidemenu");
+
+                function openmenu(){
+                    sidemeu.style.right = "0";
+                }
+                function closemenu(){
+                    sidemeu.style.right = "-200px";
+                }
+            </script>
+            <!-- about section js work-->
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxVQLZT5429ducg6ZfK_k4VBV3EHies1zxnMcUpnlVRbS0XskVQXZb3X8eLSVd0eXth/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Message sent Successfully"
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        },5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+</body>
+</html>
